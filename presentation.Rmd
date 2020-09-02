@@ -1,0 +1,22 @@
+---
+title: "productPre"
+author: "Xinyu W"
+date: "9/2/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+(Data Set)
+
+## Shiny Application
+
+## Example
+
+## Conclusion
+
+(github link)
