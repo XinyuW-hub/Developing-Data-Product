@@ -25,7 +25,10 @@ shinyServer(function(input, output) {
         data %>%
             leaflet() %>%
             addTiles() %>%
-            addMarkers(popup = paste(data$stations, "stations reported"))
+            addCircleMarkers(popup = paste(data$stations, "stations reported"),
+                             stroke = FALSE,
+                             fillOpacity = 0.5,
+                             radius = ~mag)
     })
 
 })

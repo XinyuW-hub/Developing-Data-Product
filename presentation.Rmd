@@ -11,9 +11,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Overview
 
-(Data Set)
+This Shiny application along with the Slidify presentation is created for Coursera course Developing Data Products under the Data Science track.  
+
+The data set involved is the "quakes" base data set under R, which gives the locations of 1000 seismic events of MB > 4.0. The events occurred in a cube near Fiji since 1964.
+
+```{r echo=TRUE}
+data("quakes"); head(quakes, 3)
+```
 
 ## Shiny Application
+
+The Shiny application generated from the "quakes" data set aims to do the followings:
+
+1. Peoople can manually select the magnitude and depth ranges of the earthquakes;
+2. the app can locate the selected earthquakes occurred on map;
+3. the app can automatically calculate and summary the counts of different earthquake.
 
 ## Example
 

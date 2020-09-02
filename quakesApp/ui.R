@@ -17,7 +17,9 @@ shinyUI(fluidPage(
         mainPanel(
             h3("Locations of Earthquakes off Fiji under Selected Magnitude and Depth Range"),
             h5("The data came from 'quakes' base data set under R"),
-            leafletOutput("map")
+            leafletOutput("map"),
+            
+            textOutput("")
         )
     )
 ))
