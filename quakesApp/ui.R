@@ -3,7 +3,7 @@ library(shiny)
 
 shinyUI(fluidPage(
     
-    titlePanel("Quakes Map"),
+    titlePanel("Map on 'quakes' Data Set and Build Linear Model"),
 
     sidebarLayout(
         sidebarPanel(
@@ -11,7 +11,14 @@ shinyUI(fluidPage(
                         4.0, 6.4, value = c(4.0, 5)),
             sliderInput("depthSlider", "select the minimum and maximum depth (km)",
                         40, 680, value = c(50, 250)),
-            submitButton("Submit")
+            checkboxInput("showline", "Show/Hide linear model", value = TRUE),
+            submitButton("Submit"), #submit button
+            
+            h5("The number of all selected earthquakes is:"),
+            textOutput("numberofAll"),
+            h5("The linear model shown in the plot:"),
+            textOutput("equation")
+      
         ),
 
         mainPanel(
@@ -19,7 +26,9 @@ shinyUI(fluidPage(
             h5("The data came from 'quakes' base data set under R"),
             leafletOutput("map"),
             
-            textOutput("")
+            #calculation part
+            plotOutput("plot1")
+            
         )
     )
 ))

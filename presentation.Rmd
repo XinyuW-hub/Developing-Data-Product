@@ -1,5 +1,5 @@
 ---
-title: "productPre"
+title: "Pitch: Building Map and Linear Model on Earthquakes Data"
 author: "Xinyu W"
 date: "9/2/2020"
 output: ioslides_presentation
@@ -23,12 +23,24 @@ data("quakes"); head(quakes, 3)
 
 The Shiny application generated from the "quakes" data set aims to do the followings:
 
-1. Peoople can manually select the magnitude and depth ranges of the earthquakes;
+1. People can manually select the magnitude and depth ranges of the earthquakes;
 2. the app can locate the selected earthquakes occurred on map;
-3. the app can automatically calculate and summary the counts of different earthquake.
+3. the app will then calculate and plot:
+  * the counts of selected earthquakes
+  * the relationship between magnitude and depth
+  * the linear model between those two variables
 
 ## Example
 
+The app can be easily interactive with users. After pulling the ranges of the sliders and click submit, the map, plot and linear model will be automatically generated.
+
+```{r echo=FALSE}
+knitr::include_graphics('./images/overlook.png')
+```
+
+
 ## Conclusion
 
-(github link)
+The map makes the data visually better, and the sliders give flexibility to users to look into specific ranges of magnitude and depth. The plot can also gives a summary of the distribution of magnitude versus depth. Although the linear model is not perfectly matched to all the data, but still it gives a trend.  
+
+All codes, including the application, can be found on [github link](https://github.com/XinyuW-hub/Developing-Data-Product)
