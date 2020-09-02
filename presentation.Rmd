@@ -43,4 +43,4 @@ knitr::include_graphics('./images/overlook.png')
 
 The map makes the data visually better, and the sliders give flexibility to users to look into specific ranges of magnitude and depth. The plot can also gives a summary of the distribution of magnitude versus depth. Although the linear model is not perfectly matched to all the data, but still it gives a trend.  
 
-All codes, including the application, can be found on [github link](https://github.com/XinyuW-hub/Developing-Data-Product)
+All codes, including the presentation and application, can be found on [github link](https://github.com/XinyuW-hub/Developing-Data-Product)

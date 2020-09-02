@@ -1,0 +1,12 @@
+name: quakesApp
+title: quakesApp
+username:
+account: xinyuw
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2741949
+bundleId: 3584568
+url: https://xinyuw.shinyapps.io/quakesApp/
+when: 1599059211.34984
+asMultiple: FALSE
+asStatic: FALSE
